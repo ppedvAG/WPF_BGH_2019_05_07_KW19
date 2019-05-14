@@ -1,0 +1,48 @@
+﻿<Window x:Class="ValueConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ValueConverter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="343.251" Width="355.828">
+    <Window.Resources>
+        <!--Wenn eine Bindung an eine Property durchgeführt werden soll, welche einen anderen Datentyp liefert,
+        als ihn die Ziel-Property erwartet (oder ein Wert vor der Übergabe manipuliert werden soll), muss in den 
+        Ressourcen ein Converter eingebunden werden, welcher die Typumwandlung übernimmt-->
+        <local:DoubleToBrushConv x:Key="double2Brush"/>
+        <local:DoublesToBrushConv x:Key="doubles2Brush"/>
+    </Window.Resources>
+    <StackPanel Margin="10">
+        <Slider x:Name="slrRot" Minimum="0" Maximum="255" Value="255"/>
+        <Border BorderBrush="Black" BorderThickness="1" Width="100">
+            <Rectangle Height="100" Width="100"
+                       Fill="{Binding ElementName=slrRot, Path=Value, Converter={StaticResource double2Brush}}">
+                <!--Anstelle einer Bereitstellung über die Ressourcen, kann der Converter auch
+                                direkt in dem Binding-Objekt instanziert werden-->
+                <!--<Rectangle.Fill>
+                    <Binding ElementName="slrRot" Path="Value">
+                        <Binding.Converter>
+                            <local:DoubleToBrushConv/>
+                        </Binding.Converter>
+                    </Binding>
+                </Rectangle.Fill>-->
+            </Rectangle>
+        </Border>
+        <Slider x:Name="slrRed" Minimum="0" Maximum="255" Value="255"/>
+        <Slider x:Name="slrGreen" Minimum="0" Maximum="255" Value="255"/>
+        <Slider x:Name="slrBlue" Minimum="0" Maximum="255" Value="255"/>
+        <Border BorderBrush="Black" BorderThickness="1" Width="100">
+            <Rectangle Height="100" Width="100">
+                <Rectangle.Fill>
+                    <!--Wenn sich eine Property aus mehreren Quellen bedienen soll, muss ein MultiBinding eingerichtet werden, welches immer einen MultiValueConverter benötigt-->
+                    <MultiBinding Converter="{StaticResource doubles2Brush}">
+                        <Binding ElementName="slrRed" Path="Value"/>
+                        <Binding ElementName="slrGreen" Path="Value"/>
+                        <Binding ElementName="slrBlue" Path="Value"/>
+                    </MultiBinding>
+                </Rectangle.Fill>
+            </Rectangle>
+        </Border>
+    </StackPanel>
+</Window>

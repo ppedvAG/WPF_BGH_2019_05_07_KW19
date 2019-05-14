@@ -1,0 +1,17 @@
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\Ressourcen\obj\Debug\Ressourcen.csprojAssemblyReference.cache
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\Ressourcen\obj\Debug\App.g.cs
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\Ressourcen\obj\Debug\Ressourcen_MarkupCompile.cache
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\Ressourcen\bin\Debug\Ressourcen.exe.config
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\Ressourcen\bin\Debug\Ressourcen.exe
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\Ressourcen\bin\Debug\Ressourcen.pdb
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\Ressourcen\obj\Debug\MainWindow.g.cs
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\Ressourcen\obj\Debug\Ressourcen_MarkupCompile.lref
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\Ressourcen\obj\Debug\MainWindow.baml
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\Ressourcen\obj\Debug\Ressourcen.g.resources
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\Ressourcen\obj\Debug\Ressourcen.Properties.Resources.resources
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\Ressourcen\obj\Debug\Ressourcen.csproj.GenerateResource.cache
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\Ressourcen\obj\Debug\Ressourcen.csproj.CoreCompileInputs.cache
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\Ressourcen\obj\Debug\Ressourcen.exe
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\Ressourcen\obj\Debug\Ressourcen.pdb
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\Ressourcen\obj\Debug\App.baml
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\Ressourcen\obj\Debug\Dictionary1.baml

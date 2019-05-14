@@ -1,0 +1,103 @@
+﻿<Window x:Class="Steuerelemente.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Steuerelemente"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="719.667" Width="314.325"
+        x:Name="wndMain">
+    <StackPanel>
+        <!--Labels besitzen, wie die meisten Controls und alle Container eine Content-Eigenschaft, welche
+        mit weiteren Containern/Controls befüllt werden können (Auch hier darf nur ein Root-Element vohanden sein).-->
+        <Label Content="Text"
+               BorderBrush="Black"
+               BorderThickness="2"/>
+        <!--TextBlöcke sind Labels, welche auf Strings spezialisiert sind. Sie besitzen statt der
+            Content- die Text-Property-->
+        <TextBlock Text="TextBlock"
+                   FontSize="20"
+                   FontWeight="Bold"/>
+
+        <Button Content="Klick Mich" 
+                Background="Red"
+                Click="Button_Click"/>
+
+        <Image Source="C:\Users\kh2\Desktop\Material\ppedv.bmp"
+               Stretch="Uniform"
+               Height="150"/>
+
+        <TextBox Text="Hallo"
+                 Height="100"
+                 AcceptsReturn="True"
+                 AcceptsTab="True"
+                 TextWrapping="WrapWithOverflow"
+                 
+                 ScrollViewer.VerticalScrollBarVisibility="Visible">
+            <TextBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Kopieren"/>
+                </ContextMenu>
+            </TextBox.ContextMenu>
+        </TextBox>
+
+        <!--ItemControls wie ComboBoxen oder ListViews können über die ItemsSource-Property mit Daten 
+        oder in XAML mit Items mit Content-Property bestückt werden-->
+        <ComboBox SelectedIndex="1"
+                  IsEditable="True">
+            <ComboBoxItem Content="Item1"/>
+            <ComboBoxItem Content="Item2"/>
+        </ComboBox>
+
+        <!--RadioButtons können einer Group zugeordnet werden, wodurch nur einer der Buttons angewählt sein darf-->
+        <RadioButton Content="Eins" GroupName="Auswahl"/>
+        <RadioButton Content="Zwei" GroupName="Auswahl"/>
+
+        <CheckBox Content="Hak mich ab" 
+                  IsChecked="{x:Null}" 
+                  IsThreeState="True"/>
+
+        <Separator/>
+
+        <Slider Minimum="0"
+                Maximum="100"
+                TickPlacement="BottomRight"
+                TickFrequency="10"
+                IsSnapToTickEnabled="True"
+                Value="50.78"/>
+
+        <ProgressBar Height="15"
+                     Minimum="0"
+                     Maximum="100"
+                     Value="50"
+                     IsIndeterminate="True"/>
+
+        <!--Menüs, wie ein Fenster-Menü (Menu) oder ein Kontext-Menü (ContextMenu) werden mit MenuItems befüllt.
+        Diese können ihrerseits weitere MenuItems aufnehmen, wodurch sich dann Untermenüs bilden-->
+        <Menu>
+            <MenuItem Header="Datei">
+                <MenuItem Header="Speichern"/>
+                <Separator/>
+                <MenuItem Header="Untermenü">
+                    <MenuItem Header="Eintrag1"/>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+
+        <!--Ribbon-NS: System.Windows.Controls.Ribbon-->
+        <Ribbon>
+            <Ribbon.ApplicationMenu>
+                <RibbonApplicationMenu>
+                    <RibbonApplicationMenuItem Header="Speichern"/>
+                </RibbonApplicationMenu>
+            </Ribbon.ApplicationMenu>
+            <RibbonTab Header="Bearbeiten">
+                <RibbonGroup Header="Kopieren und Co">
+                    <RibbonButton Height="20" Width="50"
+                                  Content="Kopieren"/>
+                </RibbonGroup>
+            </RibbonTab>
+        </Ribbon>
+
+    </StackPanel>
+</Window>

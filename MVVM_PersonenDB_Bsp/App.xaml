@@ -1,0 +1,19 @@
+﻿<Application x:Class="MVVM_PersonenDB_Bsp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MVVM_PersonenDB_Bsp"
+             StartupUri="View/StartView.xaml">
+    <Application.Resources>
+        <Style TargetType="Window" x:Key="sylWndMain">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush>
+                        <GradientStop Offset="0" Color="LightYellow"/>
+                        <GradientStop Offset="1" Color="Yellow"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="ResizeMode" Value="NoResize"/>
+        </Style>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,14 @@
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\UserControl\bin\Debug\UserControl.dll
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\UserControl\bin\Debug\UserControl.pdb
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\UserControl\obj\Debug\ColorPicker.g.cs
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\UserControl\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\UserControl\obj\Debug\UserControl_MarkupCompile.cache
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\UserControl\obj\Debug\UserControl_MarkupCompile.lref
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\UserControl\obj\Debug\ColorPicker.baml
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\UserControl\obj\Debug\UserControl.g.resources
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\UserControl\obj\Debug\UserControl.Properties.Resources.resources
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\UserControl\obj\Debug\UserControl.csproj.GenerateResource.cache
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\UserControl\obj\Debug\UserControl.csproj.CoreCompileInputs.cache
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\UserControl\obj\Debug\UserControl.dll
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\UserControl\obj\Debug\UserControl.pdb
+C:\Users\kh2\source\repos\WPF_Kurs_BGH\UserControl\obj\Debug\UserControl.csprojAssemblyReference.cache

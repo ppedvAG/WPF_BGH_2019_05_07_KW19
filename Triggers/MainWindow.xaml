@@ -1,0 +1,40 @@
+﻿<Window x:Class="Triggers.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Triggers"
+        xmlns:uc="clr-namespace:MyUserControl;assembly=UserControl"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="242.727" Width="303.03" x:Name="wndMain"
+        Background="{Binding ElementName=cp, Path=PickedColor}">
+    <StackPanel>
+        <Label>
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Content" Value="False"/>
+                    <Setter Property="Foreground" Value="Red"/>
+                    <Style.Triggers>
+                        <!--Mittels Trigger kann das Verhalten/Aussehen von Objekten unter bestimmten Umständen geändert werden-->
+                        <!--Der DataTrigger reagiert auf eine Veränderung einer WPF- oder .NET-Property>-->
+                        <DataTrigger Value="True">
+                            <DataTrigger.Binding>
+                                <Binding Path="BoolValue"/>
+                            </DataTrigger.Binding>
+                            <Setter Property="Content" Value="True"/>
+                            <Setter Property="Foreground" Value="Green"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+        </Label>
+        <!--Andere Triggerarten sind
+        EventTrigger: Dieser reagiert auf eine geworfenes RoutedEvent
+        PropertyTrigger: Dieser reagiert auf eine veränderte WPF-Property (nicht bei .NET-Properties anwendbar-->
+        <Button Content="Ändere BoolValue" Click="Button_Click"/>
+        
+        
+        <!--Einbindung des UserControls aus Modul 12-->
+        <uc:ColorPicker x:Name="cp"/>
+    </StackPanel>
+</Window>
